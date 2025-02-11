@@ -39,13 +39,110 @@
     </nav>
 
     <div class="main-content">
-        <div class="upload-section">
-            <h1 class="upload-title">UPLOAD A MESSAGES FILE</h1>
-            <label for="file-upload" class="upload-area">
-                <i class="fa-solid fa-file-arrow-up upload-icon"></i>
-            </label>
-            <input type="file" id="file-upload" class="upload-input">
+        <div class="search-section">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+        </div>
+        <div class="table-container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">ID <i class="fa-solid fa-sort"></i></th>
+                        <th onclick="sortTable(1)">Name <i class="fa-solid fa-sort"></i></th>
+                        <th onclick="sortTable(2)">Date <i class="fa-solid fa-sort"></i></th>
+                        <th onclick="sortTable(3)">Status <i class="fa-solid fa-sort"></i></th>
+                        <th onclick="sortTable(4)">Amount <i class="fa-solid fa-sort"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>2024-02-11</td>
+                        <td><span class="status status-active">Active</span></td>
+                        <td>$1,200.00</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>2024-02-10</td>
+                        <td><span class="status status-pending">Pending</span></td>
+                        <td>$850.00</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Bob Johnson</td>
+                        <td>2024-02-09</td>
+                        <td><span class="status status-inactive">Inactive</span></td>
+                        <td>$2,300.00</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            const searchTerm = this.value.toLowerCase();
+            const table = document.getElementById('dataTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const cells = row.getElementsByTagName('td');
+                let found = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    const cell = cells[j];
+                    if (cell.textContent.toLowerCase().indexOf(searchTerm) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+
+                row.style.display = found ? '' : 'none';
+            }
+        });
+
+        function sortTable(n) {
+            const table = document.getElementById('dataTable');
+            let switching = true;
+            let dir = 'asc';
+            let switchcount = 0;
+
+            while (switching) {
+                switching = false;
+                const rows = table.getElementsByTagName('tr');
+
+                for (let i = 1; i < rows.length - 1; i++) {
+                    let shouldSwitch = false;
+                    const x = rows[i].getElementsByTagName('td')[n];
+                    const y = rows[i + 1].getElementsByTagName('td')[n];
+                    
+                    if (dir === 'asc') {
+                        if (x.textContent.toLowerCase() > y.textContent.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else {
+                        if (x.textContent.toLowerCase() < y.textContent.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+
+                    if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                        switchcount++;
+                    }
+                }
+
+                if (switchcount === 0 && dir === 'asc') {
+                    dir = 'desc';
+                    switching = true;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
