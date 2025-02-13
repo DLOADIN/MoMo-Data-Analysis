@@ -71,6 +71,24 @@ nav ul li.active {
   background-color: var(--secondary-color);
 }
 
+nav {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) transparent;
+}
+
+nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+nav::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
 .main-content {
   flex: 1;
   padding: 20px;
