@@ -38,7 +38,7 @@ nav {
 }
 
 nav:hover {
-    width: 400px;
+    width: 420px;
     transition: all .3s ease-in-out;
 }
 
@@ -70,7 +70,6 @@ nav::-webkit-scrollbar-thumb {
     margin-top: 1.5rem;
     width: 100%;
 }
-
 .nav-menu li {
     margin-bottom: 0.5rem;
 }
@@ -79,6 +78,7 @@ nav::-webkit-scrollbar-thumb {
     background-color: var(--tertiary-color);
     border-radius: 0.5rem;
     transition-duration: .6s;
+    width:1000px;
 }
 
 .nav-menu li a {
@@ -132,7 +132,7 @@ nav::-webkit-scrollbar-thumb {
 }
 
 .money-menu li {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem .7rem;
     color: var(--text-secondary);
     font-size: 0.9rem;
     display: flex;
