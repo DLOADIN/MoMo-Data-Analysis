@@ -17,7 +17,7 @@
 
 body {
     display: flex;
-    background-color: var(--tertiary-color);
+    background-color: #000000;
     color: var(--text-primary);
     min-height: 100vh;
 }
@@ -44,7 +44,7 @@ nav:hover {
 
 nav {
     scrollbar-width: thin;
-    scrollbar-color: #ddd transparent;
+    scrollbar-color:#2b2929 transparent;
 }
 
 nav::-webkit-scrollbar {
