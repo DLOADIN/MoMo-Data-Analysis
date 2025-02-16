@@ -93,7 +93,7 @@ nav::-webkit-scrollbar-thumb {
 
 .nav-menu li.active a {
     background-color: var(--bg-light);
-    color: var(--text-primary);
+    color: #ffffff;
 }
 
 .nav-header span {
