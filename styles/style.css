@@ -133,7 +133,7 @@ nav::-webkit-scrollbar-thumb {
 
 .money-menu li {
     padding: 0.75rem .7rem;
-    color: var(--text-secondary);
+    color: #ffffff;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
@@ -144,7 +144,7 @@ nav::-webkit-scrollbar-thumb {
 
 .money-menu li a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 .money-menu li a:hover {
