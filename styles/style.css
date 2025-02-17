@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --primary-color: #000000;
+    --primary-color: #ffffff;
     --tertiary-color: #FFCC08;
     --secondary-color: #FFCC08;
     --dark-color: #000000;
@@ -17,7 +17,7 @@
 
 body {
     display: flex;
-    background-color: #000000;
+    background-color: var(--secondary-color);
     color: var(--text-primary);
     min-height: 100vh;
 }
@@ -65,6 +65,14 @@ nav::-webkit-scrollbar-thumb {
     border-bottom: 1px solid var(--border-color);
 }
 
+.nav-dashboard{
+    color: #ffffff;
+}
+
+i{
+    color: var(--dark-color);
+}
+
 .nav-menu {
     list-style: none;
     margin-top: 1.5rem;
@@ -85,7 +93,7 @@ nav::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     padding: 0.75rem 1rem;
-    color: #ffffff;
+    color: var(--dark-color);
     text-decoration: none;
     border-radius: 0.5rem;
     transition: all 0.2s;
@@ -144,12 +152,11 @@ nav::-webkit-scrollbar-thumb {
 
 .money-menu li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--dark-color);
 }
 
 .money-menu li a:hover {
     background-color: var(--bg-light);
-    color: var(--text-primary);
 }
 
 .money-menu ul li a span {
@@ -163,7 +170,7 @@ nav::-webkit-scrollbar-thumb {
 
 .main-content {
     flex: 1;
-    padding: 2rem;
+    padding: .5rem;
     margin-left: 100px;
 }
 
