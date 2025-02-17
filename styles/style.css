@@ -79,7 +79,10 @@ i{
     width: 100%;
 }
 .nav-menu li {
-    margin-bottom: 0.5rem;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  
 }
 
 .nav-menu li:hover {
@@ -129,9 +132,13 @@ i{
     border-top: 1px solid var(--border-color);
 }
 
-.money-menu ul {
-    list-style: none;
-}
+.money-menu ul li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+
 
 .money-menu li:hover {
     background-color: var(--tertiary-color);
