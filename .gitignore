@@ -1,2 +1,3 @@
 ./touch.sh
 ./upload.sh
+__pycache__/

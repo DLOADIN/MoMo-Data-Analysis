@@ -974,3 +974,7 @@ section:nth-child(odd) .animate.scroll,
   margin-top: -10px;
   display: block;
 }
+
+a {
+  all: unset;
+}
