@@ -111,10 +111,6 @@ python manage.py runserver
 - [Django Documentation](https://docs.djangoproject.com/)
 - [Chart.js Documentation](https://www.chartjs.org/)
 
-## License
-
-[Add your license information here]
-
 ## Contributing
 
 1. Fork the repository
