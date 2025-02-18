@@ -248,68 +248,30 @@
         <span class="animate scroll" style="--i: 1"></span>
       </h2>
 
-      <form name="submit-to-google-sheet" action="#">
-        <div class="input-box">
-          <div class="input-field">
-            <input type="text" name="Name" placeholder="Full Name" required />
-            <span class="focus"></span>
-          </div>
-
-          <div class="input-field">
-            <input
-              type="email"
-              name="Email"
-              placeholder="Email Address"
-              required
-            />
-            <span class="focus"></span>
-          </div>
-          <span class="animate scroll" style="--i: 3"></span>
-        </div>
-
-        <div class="input-box">
-          <div class="input-field">
-            <input
-              type="number"
-              name="Phone"
-              placeholder="Phone N°(+250700000000)"
-              required
-            />
-            <span class="focus"></span>
-          </div>
-
-          <div class="input-field">
-            <input
-              type="text"
-              name="Subject"
-              placeholder="Email Subject"
-              required
-            />
-            <span class="focus"></span>
-          </div>
-          <span class="animate scroll" style="--i: 5"></span>
-        </div>
-
-        <div class="textarea-field">
-          <textarea
-            name="Message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <span class="focus"></span>
-          <span class="animate scroll" style="--i: 7"></span>
-        </div>
-
-        <div class="btn-box btns">
-          <button type="submit" class="btn">Submit</button>
-          <span class="animate scroll" style="--i: 9"></span>
-        </div>
-      </form>
-      <span id="msg"></span>
-    </section>
+      <body>
+        <main>
+          <div class="wrapper">
+            <h1></h1>
+    
+            <div class="table-container">
+                <table>
+                    <caption>
+                      TRANSACTIONS TABLE
+                    </caption>
+                    <tr>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Fee</th>
+                      <th>Service provider</th>
+                    </tr>
+                    <tr>
+                      <td><data-cell="date">01/01/2023</td>
+                      <td><data-cell="amount">1000</td>
+                      <td><data-cell="fee">100</td>
+                      <td><data-cell="serviceprovider"> MTN</td>
+                    </tr>
+                </table>
+            </div>
 
     <!-- footer design -->
     <footer class="footer">
