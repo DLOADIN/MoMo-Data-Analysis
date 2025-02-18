@@ -26,7 +26,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">Dashboard</a>
-        <a href="#education">History</a>
+        <a href="#history">History</a>
         <a href="#skills">Graphics</a>
         <a href="#contact">Contact</a>
 
@@ -94,21 +94,21 @@
       </div>
     </section>
 
-    <!-- education section design -->
-    <section class="education" id="education">
+    <!-- history section design -->
+    <section class="history" id="history">
       <h2 class="heading">
         The <span>History</span
         ><span class="animate scroll" style="--i: 1"></span>
       </h2>
 
-      <div class="education-row">
-        <div class="education-column">
+      <div class="history-row">
+        <div class="history-column">
           <h3 class="title">
             <span class="animate scroll" style="--i: 2"></span>
           </h3>
 
           <div class="education-box">
-            <a href="{%static '/airtime' %}">
+            <a href="{% url 'momo:airtime' %}">
               <div class="education-content">
                 <div class="content">
                   <div class="year"><i class="bx bx-table"></i> Click here</div>
@@ -117,18 +117,29 @@
                     Get to all the ins/outs of the airtime  
                   </p>
                 </div>
+
+          <div class="history-box">
+            <div class="history-content">
+              <div class="content">
+                <a href="{% url 'momo:moneyrecieved' %}">
+                  <div class="year"><i class="bx bx-table"></i>Incoming Money</div>
+                  <h3>Incoming money</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, beatae voluptatum sed esse unde libero suscipit corrupti eius perspiciatis enim ex sequi laboriosam eos tempora at harum incidunt porro est.
+                  </p>
+                </a>
+
               </div>
             </a>
 
-            <div class="education-content">
+            <div class="history-content">
               <div class="content">
                 <div class="year">
                   <i class="bx bx-table"></i> Click here
                 </div>
                 <h3>Payments to code holders</h3>
                 <p>
-                  soemhting jcvbuofdvbrkfgboeq nqdwsbfrdbusjabbfnqsanidbxds
-                  wsjduibnurfbduibwrafdksnaolsdkndfinvcfr
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, culpa aut deleniti atque, ipsa porro accusantium eligendi at possimus hic beatae quasi illum quis ullam quos obcaecati nesciunt ipsam veniam.
                 </p>
               </div>
             </div>

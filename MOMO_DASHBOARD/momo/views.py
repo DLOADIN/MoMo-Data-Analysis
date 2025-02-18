@@ -19,7 +19,7 @@ def home(request):
 
 def airtime(request):
     return render(
-        request, "momo/airtime.html", {"airtime": AirtimePayments.objects.all()}
+        request, "momo/data.html", {"airtime": AirtimePayments.objects.all()}
     )
 
 
