@@ -979,8 +979,6 @@ section:nth-child(odd) .animate.scroll,
   display: block;
 }
 
-html {color color-scheme: dark;}
-
 body {
     background-color: #000000;
     color: #ffffff;
