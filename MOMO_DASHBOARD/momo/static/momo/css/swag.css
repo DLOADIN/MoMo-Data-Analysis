@@ -25,10 +25,6 @@ html {
   overflow-x: hidden;
 }
 
-a{
-  color: #ffffff;
-}
-
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -363,7 +359,7 @@ span {
   background: var(--second-bg-color);
 }
 
-.history {
+.education {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,28 +368,28 @@ span {
   padding-bottom: 5rem;
 }
 
-.history-row {
+.education-row {
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
 }
 
-.history-row .history-column {
+.education-row .education-column {
   flex: 1 1 40rem;
 }
 
-.history-column .title {
+.education-column .title {
   position: relative;
   display: inline-block;
   font-size: 2.5rem;
   margin: 0 0 1.5rem 2rem;
 }
 
-.history-column .history-box {
+.education-column .education-box {
   position: relative;
   border-left: 0.2rem solid var(--main-color);
 }
-.history-column .history-content::before {
+.education-column .education-content::before {
   content: "";
   position: absolute;
   top: 0;
@@ -403,12 +399,12 @@ span {
   background-color: var(--main-color);
   border-radius: 50%;
 }
-.history-box .history-content {
+.education-box .education-content {
   position: relative;
   padding-left: 2rem;
 }
 
-.history-content .content {
+.education-content .content {
   position: relative;
   padding: 1.5rem;
   border: 0.2rem solid var(--main-color);
@@ -417,7 +413,7 @@ span {
   overflow: hidden;
 }
 
-.history-content .content::before {
+.education-content .content::before {
   content: "";
   position: absolute;
   top: 0;
@@ -428,30 +424,30 @@ span {
   z-index: -1;
   transition: 0.5s;
 }
-.history-content .content:hover::before {
+.education-content .content:hover::before {
   width: 100%;
 }
 
-.history-content .content .year {
+.education-content .content .year {
   font-size: 1.5rem;
   color: var(--main-color);
   padding-bottom: 0.5rem;
 }
 
-.history-content .content .year i {
+.education-content .content .year i {
   padding-right: 0.5rem;
 }
 
-.history-content .content h3 {
+.education-content .content h3 {
   font-size: 2rem;
 }
 
-.history-content .content p {
+.education-content .content p {
   font-size: 1.6rem;
   padding-top: 0.5rem;
 }
 
-.history-content .content img {
+.education-content .content img {
   opacity: 0.55;
 }
 
@@ -759,13 +755,13 @@ section:nth-child(odd) .animate.scroll,
   background: var(--second-bg-color);
 }
 
-.history .history-box .animate.scroll,
+.education .education-box .animate.scroll,
 .about .about-img .animate.scroll {
   width: 105%;
 }
 
 .about.show-animate .animate.scroll,
-.history.show-animate .animate.scroll,
+.education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
@@ -896,7 +892,7 @@ section:nth-child(odd) .animate.scroll,
     font-size: 5.2rem;
   }
 
-  .history {
+  .education {
     padding: 10rem 4% 5rem 5%;
   }
 
@@ -977,15 +973,6 @@ section:nth-child(odd) .animate.scroll,
   color: #081b29;
   margin-top: -10px;
   display: block;
-}
-
-
-body {
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 1.125rem;
-    font-family: system-ui;
-    line-height: 1.5;
 }
 
 .wrapper {
