@@ -4,6 +4,7 @@ from sqlalchemy import Column, String, Integer, DateTime
 
 
 class PaymentBase:
+    """model for all payment related tables"""
 
     id = Column(Integer, primary_key=True, nullable=False)
     amount = Column(Integer, nullable=False)

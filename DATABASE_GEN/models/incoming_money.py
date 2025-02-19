@@ -5,6 +5,8 @@ from models import Base
 
 
 class IncomingMoney(Base):
+    """model for a table that stores amount recieved"""
+
     __tablename__ = "money_recieved"
 
     # date in millliseconds will serve as our unique id

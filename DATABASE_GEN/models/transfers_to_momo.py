@@ -5,6 +5,7 @@ from models import Base
 
 
 class TransferToMomo(Base):
+    """model for a table that stores transfers to mobile numbers"""
 
     __tablename__ = "transfers_to_momo"
 

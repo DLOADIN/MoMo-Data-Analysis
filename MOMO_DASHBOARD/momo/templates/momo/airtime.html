@@ -1,4 +1,8 @@
 {% extends "./layout.html" %}
+<!-- this html will inherit template from layout.html -->
+{% block tablename %}
+    <h1 style="text-align: center;">Airtime</h1>
+{% endblock %}
 {% block body %}
                 <thead>
                     <tr>
@@ -10,12 +14,12 @@
                 </thead>
                 <tbody>
                     {% for item in airtime %}
-                    <tr>
-                        <td>{{ item.date }}</td>
-                        <td>{{ item.amount }}</td>
-                        <td>{{ item.fee }}</td>
-                        <td>{{ item.service_provider }}</td>
-                    </tr>
+                        <tr>
+                            <td>{{ item.date }}</td>
+                            <td>{{ item.amount }}</td>
+                            <td>{{ item.fee }}</td>
+                            <td>{{ item.service_provider }}</td>
+                        </tr>
                     {% endfor %}
                 </tbody>
 {% endblock%}

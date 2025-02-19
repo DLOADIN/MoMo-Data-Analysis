@@ -14,4 +14,5 @@ urlpatterns = [
     path("data", views.bundles_and_packs, name="data"),
     path("incomingmoney", views.moneyreceived, name="moneyrecieved"),
     path("bankdepo", views.bankdeposits, name="bankdepo"),
+    path('api/transaction-data/', views.get_transaction_data, name='transaction_data'),
 ]

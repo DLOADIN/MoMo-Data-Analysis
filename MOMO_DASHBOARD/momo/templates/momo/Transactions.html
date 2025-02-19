@@ -1,4 +1,7 @@
 {% extends "./layout.html" %}
+{% block tablename %}
+    <h1 style="text-align: center;">General Transactions</h1>
+{% endblock %}
 {% block body %}
                 <thead>
                     <tr>
@@ -14,7 +17,7 @@
                         <td>{{ item.date }}</td>
                         <td>{{ item.amount }}</td>
                         <td>{{ item.fee }}</td>
-                        <td>{{ item.service_provider }}</td>
+                        <td>{{ item.service_provider.title }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>

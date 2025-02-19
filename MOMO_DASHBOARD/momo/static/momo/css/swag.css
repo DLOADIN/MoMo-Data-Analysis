@@ -32,10 +32,10 @@ body {
 
 .header {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 3rem 9.5%;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -279,7 +279,7 @@ section {
   opacity: 0.8;
 }
 
-.about {
+.dashboard {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,7 +300,7 @@ span {
   color: var(--main-color);
 }
 
-.about-img {
+.dashboard-img {
   position: relative;
   width: 25rem;
   height: 25rem;
@@ -310,13 +310,13 @@ span {
   align-items: center;
 }
 
-.about-img img {
+.dashboard-img img {
   width: 90%;
   border-radius: 50%;
   border: 0.2rem solid var(--main-color);
 }
 
-.about-img .circle-spin {
+.dashboard-img .circle-spin {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -330,21 +330,21 @@ span {
   border-right: 0.2rem solid var(--main-color);
 }
 
-.about.show-animate .about-img .circle-spin {
-  animation: aboutSpinner 8s linear infinite;
+.dashboard.show-animate .dashboard-img .circle-spin {
+  animation: dashboardSpinner 8s linear infinite;
 }
 
-.about-content {
+.dashboard-content {
   text-align: center;
 }
 
-.about-content h3 {
+.dashboard-content h3 {
   position: relative;
   display: inline-block;
   font-size: 2.6rem;
 }
 
-.about-content p {
+.dashboard-content p {
   position: relative;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
@@ -451,38 +451,38 @@ span {
   opacity: 0.55;
 }
 
-.skills {
+.charts {
   min-height: auto;
   padding-bottom: 7rem;
   background: var(--second-bg-color);
 }
 
-.skills h2 {
+.charts h2 {
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.skills .skills-row {
+.charts .charts-row {
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
 }
 
-.skills-row .skills-column {
+.charts-row .charts-column {
   flex: 1 1 40rem;
 }
 
-.skills-column .title {
+.charts-column .title {
   position: relative;
   display: inline-block;
   font-size: 2.5rem;
   margin: 0 0 1.5rem;
 }
-.skills-column .skills-box {
+.charts-column .charts-box {
   position: relative;
 }
-.skills-box .skills-content {
+.charts-box .charts-content {
   position: relative;
   border: 0.2rem solid var(--main-color);
   border-radius: 0.6rem;
@@ -491,7 +491,7 @@ span {
   overflow: hidden;
 }
 
-.skills-box .skills-content::before {
+.charts-box .charts-content::before {
   content: "";
   position: absolute;
   top: 0;
@@ -503,25 +503,25 @@ span {
   transition: 0.5s;
 }
 
-.skills-box .skills-content:hover::before {
+.charts-box .charts-content:hover::before {
   width: 100%;
 }
 
-.skills-content .progress {
+.charts-content .progress {
   padding: 1rem 0;
 }
 
-.skills-content .progress h3 {
+.charts-content .progress h3 {
   font-size: 1.7rem;
   display: flex;
   justify-content: space-between;
 }
 
-.skills-content .progress h3 span {
+.charts-content .progress h3 span {
   color: var(--text-color);
 }
 
-.skills-content .progress .bar {
+.charts-content .progress .bar {
   height: 2.5rem;
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
@@ -529,59 +529,59 @@ span {
   margin: 1rem 0;
 }
 
-.skills-content .progress .bar span {
+.charts-content .progress .bar span {
   display: block;
   height: 100%;
   border-radius: 0.3rem;
   background: var(--main-color);
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-  width: 90%;
+.charts-column:nth-child(1) .charts-content .progress:nth-child(1) .bar span {
+  width: 10%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-  width: 87%;
+.charts-column:nth-child(1) .charts-content .progress:nth-child(2) .bar span {
+  width: 30%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-  width: 67%;
+.charts-column:nth-child(1) .charts-content .progress:nth-child(3) .bar span {
+  width: 27%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-  width: 85%;
+.charts-column:nth-child(1) .charts-content .progress:nth-child(4) .bar span {
+  width: 35%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
-  width: 73%;
+.charts-column:nth-child(1) .charts-content .progress:nth-child(5) .bar span {
+  width: 13%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+.charts-column:nth-child(1) .charts-content .progress:nth-child(6) .bar span {
   width: 81%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-  width: 93%;
+.charts-column:nth-child(2) .charts-content .progress:nth-child(1) .bar span {
+  width: 23%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-  width: 72%;
+.charts-column:nth-child(2) .charts-content .progress:nth-child(2) .bar span {
+  width: 12%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+.charts-column:nth-child(2) .charts-content .progress:nth-child(3) .bar span {
   width: 82%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+.charts-column:nth-child(2) .charts-content .progress:nth-child(4) .bar span {
   width: 92%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+.charts-column:nth-child(2) .charts-content .progress:nth-child(5) .bar span {
   width: 78%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
-  width: 94%;
+.charts-column:nth-child(2) .charts-content .progress:nth-child(6) .bar span {
+  width: 4%;
 }
 
 .contact {
@@ -731,7 +731,14 @@ span {
   height: 100%;
   background: var(--bg-color);
   z-index: 2;
+  opacity: 0.2;
+  transition: opacity 2s ease;
 }
+
+.animate.loaded {
+  opacity: 1;
+}
+
 
 .animate.home-img {
   width: 50%;
@@ -756,13 +763,13 @@ section:nth-child(odd) .animate.scroll,
 }
 
 .history .history-box .animate.scroll,
-.about .about-img .animate.scroll {
+.dashboard .dashboard-img .animate.scroll {
   width: 105%;
 }
 
-.about.show-animate .animate.scroll,
+.dashboard.show-animate .animate.scroll,
 .history.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll,
+.charts.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
   transition-delay: calc(0.3s * var(--i));
@@ -958,7 +965,7 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-@keyframes aboutSpinner {
+@keyframes dashboardSpinner {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
@@ -973,4 +980,35 @@ section:nth-child(odd) .animate.scroll,
   color: #081b29;
   margin-top: -10px;
   display: block;
+}
+
+a {
+  all: unset;
+}
+
+.charts {
+  opacity: 1 !important;
+}
+
+/* charts */
+.charts-content canvas {
+  width: 100% !important;
+  height: 300px !important;
+  margin: 1rem 0;
+}
+
+.charts-box .charts-content {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.charts-column {
+  flex: 1 1 100%;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .charts-column {
+      flex: 1 1 45%;
+  }
 }

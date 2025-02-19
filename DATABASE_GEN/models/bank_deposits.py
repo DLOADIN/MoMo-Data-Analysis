@@ -5,6 +5,8 @@ from models import Base
 
 
 class BankDeposits(Base):
+    """model for a table that stores deposits from bank accounts"""
+
     __tablename__ = "bank_deposits"
 
     id = Column(Integer, primary_key=True, nullable=False)

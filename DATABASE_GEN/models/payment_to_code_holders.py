@@ -5,6 +5,8 @@ from models import Base
 
 
 class PaymentToCode(Base):
+    """model for a table that stores payment to codes"""
+
     __tablename__ = "payment_to_code"
 
     # date in millliseconds will serve as our unique id
