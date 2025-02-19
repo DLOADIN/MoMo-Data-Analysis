@@ -537,52 +537,45 @@ span {
 }
 
 .charts-column:nth-child(1) .charts-content .progress:nth-child(1) .bar span {
-  width: 10%;
+  width: 3.82%;
 }
 
 .charts-column:nth-child(1) .charts-content .progress:nth-child(2) .bar span {
-  width: 30%;
+  width: 39%;
 }
 
 .charts-column:nth-child(1) .charts-content .progress:nth-child(3) .bar span {
-  width: 27%;
-}
-
-.charts-column:nth-child(1) .charts-content .progress:nth-child(4) .bar span {
   width: 35%;
 }
 
+.charts-column:nth-child(1) .charts-content .progress:nth-child(4) .bar span {
+  width: 15.03%;
+}
+
 .charts-column:nth-child(1) .charts-content .progress:nth-child(5) .bar span {
-  width: 13%;
+  width: 0.91%;
 }
 
 .charts-column:nth-child(1) .charts-content .progress:nth-child(6) .bar span {
-  width: 81%;
+  width: 0.67%;
 }
 
 .charts-column:nth-child(2) .charts-content .progress:nth-child(1) .bar span {
-  width: 23%;
+  width: 1.21%;
 }
 
 .charts-column:nth-child(2) .charts-content .progress:nth-child(2) .bar span {
-  width: 12%;
+  width: 0.18%;
 }
 
 .charts-column:nth-child(2) .charts-content .progress:nth-child(3) .bar span {
-  width: 82%;
+  width: 0.18%;
 }
 
 .charts-column:nth-child(2) .charts-content .progress:nth-child(4) .bar span {
-  width: 92%;
+  width: 2.36%;
 }
 
-.charts-column:nth-child(2) .charts-content .progress:nth-child(5) .bar span {
-  width: 78%;
-}
-
-.charts-column:nth-child(2) .charts-content .progress:nth-child(6) .bar span {
-  width: 4%;
-}
 
 .contact {
   min-height: auto;
